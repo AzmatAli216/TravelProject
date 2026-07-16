@@ -1,0 +1,174 @@
+.navbar {
+
+  height: 80px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 0 60px;
+
+  background: whitesmoke ;
+
+
+  box-shadow:0 4px 15px rgba(0,0,0,0.08);
+
+  position: sticky;
+
+  top:0;
+
+  z-index:1000;
+
+}
+
+
+/* Logo */
+
+.logo {
+
+  display:flex;
+
+  align-items:center;
+
+  gap:12px;
+
+
+
+}
+
+
+/* Globe Icon */
+
+.logo-icon {
+
+  font-size:40px;
+
+  transition:0.4s;
+
+  cursor:pointer;
+
+}
+
+.logo:hover .logo-icon {
+
+  transform: rotate(20deg) scale(1.1);
+
+}
+
+.logo small {
+
+  display:block;
+
+  font-size:12px;
+
+  color:#777;
+
+  letter-spacing:1px;
+
+  margin-top:2px;
+
+}
+
+
+/* Logo Text */
+
+.logo-text {
+
+  font-size:32px;
+
+  font-weight:800;
+
+  letter-spacing:1px;
+
+  background: linear-gradient(45deg, #0b3d91, #00a8ff);
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+
+}
+
+
+/* Network part */
+
+.logo-text span {
+
+  background: linear-gradient(45deg, #00a8ff, #0b3d91);
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+
+}
+
+/* Links container */
+
+.links {
+
+  display:flex;
+
+  gap:50px;
+
+  align-items:center;
+
+}
+
+
+/* Links */
+
+.links a {
+
+  text-decoration:none;
+
+  color:#333;
+
+  font-size:20px;
+
+  font-weight:600;
+
+  position:relative;
+
+  transition:.3s;
+
+}
+
+
+/* Hover */
+
+.links a:hover {
+
+  color:#0b3d91;
+
+}
+
+
+/* Underline animation */
+
+.links a::after {
+
+  content:"";
+
+  position:absolute;
+
+  width:0;
+
+  height:3px;
+
+  background:#0b3d91;
+
+  left:0;
+
+  bottom:-8px;
+
+  transition:.3s;
+
+}
+
+
+.links a:hover::after {
+
+  width:100%;
+
+}
